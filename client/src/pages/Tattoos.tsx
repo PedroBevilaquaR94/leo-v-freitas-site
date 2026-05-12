@@ -67,26 +67,25 @@ export default function Tattoos() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section - Premium Centralizado */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        {/* Background Geométrico */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-gradient-to-br from-accent/10 to-destructive/5"></div>
+      {/* Hero Section - Premium Banner com Logo */}
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+        {/* Background Banner */}
+        <div className="absolute inset-0">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-banner-leo-cC7c2uouzVRwtspxHjvfz4.webp"
+            alt="Hero Banner"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
-        {/* Corner Decorations */}
-        <div className="absolute top-0 left-0 w-20 h-20 border-l-2 border-t-2 border-accent/30"></div>
-        <div className="absolute top-0 right-0 w-20 h-20 border-r-2 border-t-2 border-accent/30"></div>
-        <div className="absolute bottom-0 left-0 w-20 h-20 border-l-2 border-b-2 border-accent/30"></div>
-        <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-accent/30"></div>
-
         <div className="container relative z-10 text-center max-w-4xl">
-          {/* Logo Centralizada - Sem texto acima */}
-          <div className="mb-12 animate-fadeInScale" style={{ animationDelay: '0.2s' }}>
+          {/* Logo Centralizada - Premium */}
+          <div className="mb-8 animate-fadeInScale" style={{ animationDelay: '0.2s' }}>
             <img
-              src="/manus-storage/pasted_file_O64l78_image_68697f9d.png"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/leo-logo-premium-v2-ccAqhqq5C3u6Lyjr4KnYPX.webp"
               alt="Leo V. Freitas Logo"
-              className="h-32 md:h-48 mx-auto mb-12 object-contain"
+              className="h-40 md:h-56 mx-auto object-contain"
             />
           </div>
 
@@ -106,13 +105,13 @@ export default function Tattoos() {
               href="https://wa.me/5543988627463"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-accent/90 transition-all duration-300"
             >
               Agendar Sessão
             </a>
             <a
               href="#portfolio"
-              className="btn-secondary"
+              className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300"
             >
               Ver Trabalhos
             </a>
@@ -133,49 +132,37 @@ export default function Tattoos() {
         <p className="text-accent text-sm">◆ ◆ ◆</p>
       </div>
 
-      {/* Sobre Section */}
+      {/* Sobre Section - SEM FOTO DO LEO */}
       <section id="about" className="py-20 md:py-32">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* Texto */}
-            <div className="animate-slideInLeft" style={{ animationDelay: '0.2s' }}>
-              <p className="text-accent-sm mb-4">Sobre</p>
-              <h2 className="mb-8">
-                A Arte na<br />
-                <span className="text-accent">Pele</span>
-              </h2>
-              <p className="text-muted-lg mb-6">
-                Leo V. Freitas é um tatuador com mais de 9 anos de experiência, especialista em Realismo, Portrait e Blackwork. Nascido em Londrina/PR, desde cedo desenvolveu uma profunda conexão com as artes, tendo desenho e pintura como suas principais formas de expressão.
-              </p>
-              <p className="text-muted-lg mb-8">
-                Seu propósito com cada tatuagem é criar algo exclusivo, autoral e verdadeiramente artístico. Cada cliente sai com uma obra de arte única que eleva sua autoestima e traz satisfação profunda.
-              </p>
-              <p className="text-accent italic text-lg">
-                "A tatuagem é muito mais do que um trabalho — é uma forma de vida, uma paixão que alimenta minha alma artística."
-              </p>
-            </div>
-
-            {/* Foto */}
-            <div className="relative animate-slideInRight" style={{ animationDelay: '0.2s' }}>
-              <img
-                src="/manus-storage/pasted_file_NuHx6z_image_3d17ea24.png"
-                alt="Leo Freitas"
-                className="w-full h-auto object-cover border-2 border-destructive/40"
-              />
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Sobre</p>
+            <h2 className="mb-12">
+              A Arte na<br />
+              <span className="text-accent">Pele</span>
+            </h2>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              Leo V. Freitas é um tatuador com mais de 9 anos de experiência, especialista em Realismo, Portrait e Blackwork. Nascido em Londrina/PR, desde cedo desenvolveu uma profunda conexão com as artes, tendo desenho e pintura como suas principais formas de expressão.
+            </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+              Seu propósito com cada tatuagem é criar algo exclusivo, autoral e verdadeiramente artístico. Cada cliente sai com uma obra de arte única que eleva sua autoestima e traz satisfação profunda.
+            </p>
+            <p className="text-accent italic text-xl">
+              "A tatuagem é muito mais do que um trabalho — é uma forma de vida, uma paixão que alimenta minha alma artística."
+            </p>
           </div>
 
           {/* Stats */}
           <div className="grid md:grid-cols-3 gap-12 mt-24">
-            <div className="card-premium text-center">
+            <div className="border-2 border-destructive/40 p-12 text-center hover:border-accent transition-colors duration-300">
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">9+</p>
               <p className="text-muted-foreground text-lg uppercase tracking-widest font-light">Anos de Experiência</p>
             </div>
-            <div className="card-premium text-center">
+            <div className="border-2 border-destructive/40 p-12 text-center hover:border-accent transition-colors duration-300">
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">600+</p>
               <p className="text-muted-foreground text-lg uppercase tracking-widest font-light">Trabalhos Realizados</p>
             </div>
-            <div className="card-premium text-center">
+            <div className="border-2 border-destructive/40 p-12 text-center hover:border-accent transition-colors duration-300">
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">100%</p>
               <p className="text-muted-foreground text-lg uppercase tracking-widest font-light">Satisfação</p>
             </div>
@@ -192,23 +179,23 @@ export default function Tattoos() {
       <section className="py-20 md:py-32">
         <div className="container">
           <div className="mb-20 text-center">
-            <p className="text-accent-sm mb-4">Técnicas</p>
+            <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Técnicas</p>
             <h2>Especialidades</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-12">
-            <div className="card-premium">
+            <div className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300">
               <h3 className="text-2xl font-bold text-accent mb-6">Realismo</h3>
               <p className="text-muted-lg">
                 Tatuagens realistas com foco em detalhes, sombras e texturas que criam profundidade e vida na pele. Cada linha é pensada para máximo impacto visual.
               </p>
             </div>
-            <div className="card-premium">
+            <div className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300">
               <h3 className="text-2xl font-bold text-accent mb-6">Portrait</h3>
               <p className="text-muted-lg">
                 Retratos precisos de pessoas especiais, capturando expressões e características únicas com maestria. Técnica que exige absoluta precisão e sensibilidade artística.
               </p>
             </div>
-            <div className="card-premium">
+            <div className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300">
               <h3 className="text-2xl font-bold text-accent mb-6">Blackwork</h3>
               <p className="text-muted-lg">
                 Trabalhos em preto sólido com composições fluidas e alto contraste. Impacto visual máximo com elegância e sofisticação em cada traço.
@@ -254,19 +241,9 @@ export default function Tattoos() {
         </div>
       </section>
 
-      {/* Divider */}
-      <div className="container my-12 md:my-20 text-center">
-        <p className="text-accent text-sm">◆ ◆ ◆</p>
-      </div>
-
-      {/* Portfolio Carousel Section */}
+      {/* Carousel Section */}
       <section id="portfolio" className="py-20 md:py-32">
         <div className="container">
-          <div className="mb-20 text-center">
-            <p className="text-accent-sm mb-4">Portfólio</p>
-            <h2>Trabalhos Selecionados</h2>
-          </div>
-
           <div className="relative">
             {/* Main Carousel */}
             <div className="relative w-full aspect-video md:aspect-auto md:h-96 lg:h-[500px] overflow-hidden mb-12 border-2 border-destructive">
@@ -337,26 +314,24 @@ export default function Tattoos() {
         <p className="text-accent text-sm">◆ ◆ ◆</p>
       </div>
 
-      {/* Info Section */}
+      {/* Cuidados Section */}
       <section className="py-20 md:py-32">
         <div className="container">
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="card-premium">
-              <h3 className="text-2xl font-bold text-accent mb-6">Orçamento</h3>
+          <div className="mb-20 text-center">
+            <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Pós-Tatuagem</p>
+            <h2>Cuidados Essenciais</h2>
+          </div>
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-accent mb-6">Primeiras 24 Horas</h3>
               <p className="text-muted-lg">
-                Orçamento pode ser feito online através do WhatsApp. Envie uma foto ou descrição do seu projeto e retornaremos no mesmo dia.
+                Mantenha a tatuagem coberta com a bandagem fornecida. Após 2-3 horas, remova com cuidado e lave com água morna e sabão neutro. Seque bem com papel toalha descartável.
               </p>
             </div>
-            <div className="card-premium">
-              <h3 className="text-2xl font-bold text-accent mb-6">Cuidados</h3>
+            <div className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300">
+              <h3 className="text-2xl font-bold text-accent mb-6">Próximos Dias</h3>
               <p className="text-muted-lg">
-                A pele deve estar saudável, limpa e hidratada antes da sessão. Evite exposição ao sol e não consuma álcool 24h antes.
-              </p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-2xl font-bold text-accent mb-6">Criação</h3>
-              <p className="text-muted-lg">
-                Não sabe o que tatuar? Sem problema! Criamos projetos exclusivos e autorais pensados especialmente para você.
+                Aplique pomada cicatrizante 3-4 vezes ao dia. Evite água quente, piscinas, mar e atividades físicas intensas. Não coce nem pele a tatuagem. Use roupas limpas e confortáveis.
               </p>
             </div>
           </div>
@@ -371,118 +346,21 @@ export default function Tattoos() {
       {/* CTA Section */}
       <section className="py-20 md:py-32">
         <div className="container text-center">
-          <p className="text-accent-sm mb-4">Próximo Passo</p>
+          <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Próximo Passo</p>
           <h2 className="mb-8">
-            Pronto para sua<br />
-            <span className="text-accent">próxima tatuagem</span>?
+            Transforme sua<br />
+            <span className="text-accent">Pele em Arte</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Entre em contato e vamos transformar sua ideia em uma obra de arte única na sua pele.
+            Agende sua sessão e deixe Leo V. Freitas criar uma obra de arte única em sua pele.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="btn-primary">
-              Agendar Sessão
+            <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-accent/90 transition-all duration-300">
+              Agendar Agora
             </a>
-            <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              Solicitar Orçamento
+            <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300">
+              Tirar Dúvidas
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="container my-12 md:my-20 text-center">
-        <p className="text-accent text-sm">◆ ◆ ◆</p>
-      </div>
-
-      {/* Contato Section */}
-      <section id="contact" className="py-20 md:py-32">
-        <div className="container">
-          <div className="mb-20 text-center">
-            <p className="text-accent-sm mb-4">Contato</p>
-            <h2>Fale com Leo</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            {/* Informações de Contato */}
-            <div>
-              <h3 className="text-2xl font-bold text-accent mb-8">Localização</h3>
-              <div className="space-y-8">
-                <div>
-                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Endereço</p>
-                  <p className="text-lg text-muted-foreground">R. Alagoas, 792 - Centro</p>
-                  <p className="text-lg text-muted-foreground">Londrina - PR, 86010-520</p>
-                </div>
-                <div>
-                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Telefone/WhatsApp</p>
-                  <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="text-lg text-accent hover:text-accent/80 transition-colors">
-                    (43) 98862-7463
-                  </a>
-                </div>
-                <div>
-                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Horário</p>
-                  <p className="text-lg text-muted-foreground">Atendimento com horário agendado</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Mapa */}
-            <div>
-              <h3 className="text-2xl font-bold text-accent mb-8">Estúdio</h3>
-              <div className="w-full h-96 border-2 border-destructive/40 rounded-lg overflow-hidden">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  loading="lazy"
-                  allowFullScreen
-                  referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8194638427047!2d-51.16960!3d-23.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f5d3c3c3c3c3c3%3A0x0!2sR.%20Alagoas%2C%20792%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-520!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="container my-12 md:my-20 text-center">
-        <p className="text-accent text-sm">◆ ◆ ◆</p>
-      </div>
-
-      {/* FAQ Section */}
-      <section className="py-20 md:py-32">
-        <div className="container">
-          <div className="mb-20 text-center">
-            <p className="text-accent-sm mb-4">Dúvidas</p>
-            <h2>Perguntas Frequentes</h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">Orçamento online?</h3>
-              <p className="text-muted-lg">Sim! Orçamento é feito online através do WhatsApp. Envie uma foto ou descrição do seu projeto.</p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">Tempo de resposta?</h3>
-              <p className="text-muted-lg">Entraremos em contato no mesmo dia. Atendimento rápido e profissional garantido.</p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">O que é Blackwork?</h3>
-              <p className="text-muted-lg">Trabalhos em preto com composições marcadas por linhas variadas, traços do mais grosso ao mais fino.</p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">Cuidados pré-tatuagem?</h3>
-              <p className="text-muted-lg">Pele deve estar saudável, limpa e hidratada. Evite sol e álcool 24h antes.</p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">Você cria projetos?</h3>
-              <p className="text-muted-lg">Sim! Todo projeto é exclusivo para cada cliente. Criamos algo especial para você.</p>
-            </div>
-            <div className="card-premium">
-              <h3 className="text-xl font-bold text-accent mb-4">Tatuagem dói?</h3>
-              <p className="text-muted-lg">Cada pessoa tem seu nível de dor, porém geralmente todos conseguem tatuar tranquilamente.</p>
-            </div>
           </div>
         </div>
       </section>

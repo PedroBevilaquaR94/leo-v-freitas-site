@@ -90,12 +90,16 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/background-pattern-artistic-9yVesV6WooLprCR6bUGjmS.webp');
+    background-size: 400px 400px;
+    background-attachment: fixed;
+    background-repeat: repeat;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
   }
 
   h1 {
@@ -255,7 +259,11 @@
 
   /* Buttons */
   .btn-primary {
-    @apply px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-opacity-90 transition-all duration-300;
+    @apply px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium transition-all duration-300;
+  }
+
+  .btn-primary:hover {
+    @apply opacity-90;
   }
 
   .btn-secondary {
