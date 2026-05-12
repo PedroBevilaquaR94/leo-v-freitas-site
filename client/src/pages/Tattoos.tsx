@@ -77,24 +77,28 @@ export default function Tattoos() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section - Apenas Fundo Art Deco */}
+      {/* Hero Section - Logo do Leão com Fundo Escuro */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Background - Fundo Art Deco Elegante */}
+        {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-background-clean-WmvPyabrLEEFDisaM3NWYq.webp"
+            src="/manus-storage/hero-banner-leo_0c2ba533.png"
             alt="Hero Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-black/80"></div>
         </div>
 
         {/* Conteúdo Centralizado */}
-        <div className="container relative z-10 text-center max-w-4xl">
-          {/* Título Principal */}
-          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-accent animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
-            LEO V. FREITAS
-          </h1>
+        <div className="container relative z-10 text-center max-w-4xl px-4">
+          {/* Logo do Leão - Centralizada e Completa */}
+          <div className="mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
+            <img
+              src="/manus-storage/leo-logo-masculine_67cfc420.png"
+              alt="Leo V. Freitas Logo"
+              className="h-48 md:h-64 object-contain drop-shadow-lg"
+            />
+          </div>
 
           {/* Subtítulo */}
           <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
@@ -230,14 +234,14 @@ export default function Tattoos() {
           </div>
 
           {/* Carousel */}
-          <div className="relative max-w-3xl mx-auto">
+          <div className="relative max-w-4xl mx-auto">
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-lg mb-8 bg-black/20 p-4">
-              <div className="relative overflow-hidden rounded-lg aspect-auto max-h-[500px]">
+              <div className="relative overflow-hidden rounded-lg bg-black/40 flex items-center justify-center min-h-[400px] md:min-h-[600px]">
                 <img
                   src={filteredPortfolio[currentSlide]?.image}
                   alt={filteredPortfolio[currentSlide]?.title}
-                  className="w-full h-full object-contain transition-transform duration-500"
+                  className="w-full h-full object-contain max-h-[600px] md:max-h-[700px]"
                 />
               </div>
               <div className="absolute inset-0 border-2 border-accent opacity-30 rounded-lg m-4"></div>
