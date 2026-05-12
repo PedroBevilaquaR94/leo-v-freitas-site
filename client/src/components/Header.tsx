@@ -20,17 +20,12 @@ export default function Header() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-12">
           <Link href="/" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
-            Início
-          </Link>
-          <Link href="/tattoos" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
             Tatuagens
           </Link>
           <Link href="/quadros" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
             Quadros
           </Link>
-          <Link href="/#contato" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
-            Contato
-          </Link>
+
         </div>
 
         {/* CTA Button */}
@@ -59,17 +54,12 @@ export default function Header() {
         <div className="md:hidden border-t border-destructive/30 bg-background">
           <div className="container py-6 flex flex-col gap-6">
             <Link href="/" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
-              Início
-            </Link>
-            <Link href="/tattoos" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
               Tatuagens
             </Link>
             <Link href="/quadros" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
               Quadros
             </Link>
-            <Link href="/#contato" className="text-sm uppercase tracking-widest text-foreground hover:text-accent transition-colors duration-300">
-              Contato
-            </Link>
+
             <a
               href="https://wa.me/5543988627463"
               target="_blank"
