@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Header from '@/components/Header';
-import Divider from '@/components/Divider';
+
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const quadrosPortfolio = [
@@ -70,7 +70,10 @@ export default function Quadros() {
         </div>
       </section>
 
-      <Divider />
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
 
       {/* About Section */}
       <section className="py-24 md:py-40">
@@ -90,7 +93,10 @@ export default function Quadros() {
         </div>
       </section>
 
-      <Divider />
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
 
       {/* Carousel Section */}
       <section className="py-24 md:py-40">
@@ -160,7 +166,10 @@ export default function Quadros() {
         </div>
       </section>
 
-      <Divider />
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
 
       {/* Techniques Section */}
       <section className="py-24 md:py-40">
@@ -186,7 +195,10 @@ export default function Quadros() {
         </div>
       </section>
 
-      <Divider />
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
 
       {/* Commissions Section */}
       <section className="py-24 md:py-40">

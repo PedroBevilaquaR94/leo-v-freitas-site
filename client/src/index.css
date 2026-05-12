@@ -78,38 +78,38 @@
   --sidebar-ring: #c9a961;
 }
 
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   html {
-    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
   }
+
   body {
-    @apply bg-background text-foreground;
-    letter-spacing: 0.5px;
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    font-weight: 600;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
+
   h1 {
-    @apply text-6xl md:text-7xl lg:text-8xl;
-    line-height: 1.1;
+    @apply text-5xl md:text-7xl lg:text-8xl;
   }
+
   h2 {
-    @apply text-5xl md:text-6xl;
-    line-height: 1.2;
+    @apply text-4xl md:text-6xl;
   }
+
   h3 {
-    @apply text-4xl md:text-5xl;
+    @apply text-2xl md:text-4xl;
   }
-  p {
-    line-height: 1.8;
-  }
+
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
@@ -123,8 +123,36 @@
   }
 }
 
-@layer utilities {
-  /* Animações de entrada elegantes */
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      max-width: 1400px;
+    }
+  }
+
+  /* Animações Premium */
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -149,17 +177,17 @@
 
   @keyframes glowPulse {
     0%, 100% {
-      text-shadow: 0 0 10px rgba(212, 175, 55, 0.3), 0 0 20px rgba(212, 175, 55, 0.1);
+      text-shadow: 0 0 20px rgba(201, 169, 97, 0.5);
     }
     50% {
-      text-shadow: 0 0 20px rgba(212, 175, 55, 0.6), 0 0 30px rgba(212, 175, 55, 0.3);
+      text-shadow: 0 0 40px rgba(201, 169, 97, 0.8);
     }
   }
 
   @keyframes slideInLeft {
     from {
       opacity: 0;
-      transform: translateX(-40px);
+      transform: translateX(-50px);
     }
     to {
       opacity: 1;
@@ -170,7 +198,7 @@
   @keyframes slideInRight {
     from {
       opacity: 0;
-      transform: translateX(40px);
+      transform: translateX(50px);
     }
     to {
       opacity: 1;
@@ -178,12 +206,23 @@
     }
   }
 
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
   .animate-fadeInUp {
-    animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-fadeInScale {
-    animation: fadeInScale 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: fadeInScale 0.8s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-glowPulse {
@@ -191,68 +230,52 @@
   }
 
   .animate-slideInLeft {
-    animation: slideInLeft 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: slideInLeft 0.8s ease-out forwards;
+    opacity: 0;
   }
 
   .animate-slideInRight {
-    animation: slideInRight 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    animation: slideInRight 0.8s ease-out forwards;
+    opacity: 0;
   }
 
-  /* Stagger delays para sequência */
-  .animate-delay-100 { animation-delay: 100ms; }
-  .animate-delay-200 { animation-delay: 200ms; }
-  .animate-delay-300 { animation-delay: 300ms; }
-  .animate-delay-400 { animation-delay: 400ms; }
-  .animate-delay-500 { animation-delay: 500ms; }
-  .animate-delay-600 { animation-delay: 600ms; }
+  .animate-bounce-slow {
+    animation: bounce 2s ease-in-out infinite;
+  }
+
+  /* Dividers */
+  .divider-gold {
+    @apply h-px bg-gradient-to-r from-transparent via-accent to-transparent my-12 md:my-20;
+  }
+
+  /* Cards Premium */
+  .card-premium {
+    @apply border-2 border-destructive/40 p-8 md:p-12 hover:border-accent transition-all duration-300;
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-opacity-90 transition-all duration-300;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300;
+  }
+
+  /* Text Utilities */
+  .text-accent-sm {
+    @apply text-accent text-sm uppercase tracking-widest font-light;
+  }
+
+  .text-muted-lg {
+    @apply text-muted-foreground text-lg leading-relaxed;
+  }
 }
 
-@layer components {
-  /**
-   * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
-   */
-  .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .flex {
-    min-height: 0;
-    min-width: 0;
-  }
-
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 3rem;
-      padding-right: 3rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 4rem;
-      padding-right: 4rem;
-      max-width: 1400px;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .container {
-      padding-left: 6rem;
-      padding-right: 6rem;
-    }
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
