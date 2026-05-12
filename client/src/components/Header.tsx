@@ -9,9 +9,12 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-md border-b border-destructive/30">
       <nav className="container py-6 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col items-start gap-1">
-          <div className="text-2xl md:text-3xl font-bold text-accent tracking-widest">LEO V.</div>
-          <div className="text-xs text-muted-foreground uppercase tracking-widest font-light">Tattoo & Art</div>
+        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/leo-logo-premium-jw8AhJkCrSuBtriB627a2S.webp"
+            alt="Leo V. Freitas"
+            className="h-14 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

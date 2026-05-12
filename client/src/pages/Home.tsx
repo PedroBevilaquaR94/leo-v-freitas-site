@@ -7,37 +7,55 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section - Centralizado */}
+      {/* Hero Section - Premium */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-        <div className="absolute inset-0 opacity-5">
+        {/* Background Geométrico */}
+        <div className="absolute inset-0 opacity-40">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/pattern-abstract-dark-4YSHvKtDXrQe3EUBVLk6Dt.webp"
-            alt="pattern"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-background-geometric-H9RuC8ALez2ctNUDCVjiWH.webp"
+            alt="background"
             className="w-full h-full object-cover"
           />
         </div>
+
+        {/* Corner Decorations */}
+        <img
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/corner-decoration-top-left-PEvfshLjtgSVSy2Cjgt3Gi.webp"
+          alt="corner"
+          className="absolute top-0 left-0 w-32 h-32 opacity-60"
+        />
+        <img
+          src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/corner-decoration-bottom-right-AASoQA78bCqFvP7nrQb3Fb.webp"
+          alt="corner"
+          className="absolute bottom-0 right-0 w-32 h-32 opacity-60"
+        />
 
         <div className="container relative z-10 text-center max-w-4xl">
           <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light opacity-0 animate-fadeInUp" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
             Leo V. Freitas
           </p>
-          
-          <h1 className="mb-6 leading-tight opacity-0 animate-fadeInUp animate-glowPulse" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-            Realismo com <span className="text-accent">identidade</span>
+
+          <h1 className="mb-4 leading-tight opacity-0 animate-fadeInUp animate-glowPulse" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            Realismo com
           </h1>
 
-          <h1 className="mb-12 leading-tight opacity-0 animate-fadeInUp" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+          <h1 className="mb-4 leading-tight opacity-0 animate-fadeInUp" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+            <span className="text-accent">identidade</span>
+          </h1>
+
+          <h1 className="mb-12 leading-tight opacity-0 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             e propósito
           </h1>
-          
-          <p className="text-lg md:text-xl text-muted-foreground mb-16 leading-relaxed opacity-0 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
-            Tatuagens em Londrina com traços intensos, autorais e cheios de personalidade. Cada projeto é pensado para refletir quem você é — arte, técnica e autenticidade em cada detalhe.
+
+          <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed opacity-0 animate-fadeInUp" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+            Blackwork · Realismo · Portrait
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center opacity-0 animate-fadeInUp" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
-            <Link href="/tattoos" className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300 text-center">
-              Ver Tatuagens
-            </Link>
+          <p className="text-muted-foreground mb-16 leading-relaxed opacity-0 animate-fadeInUp" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
+            Tatuagens em Londrina com traços intensos, autorais e cheios de personalidade.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center opacity-0 animate-fadeInUp" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
             <a
               href="https://wa.me/5543988627463"
               target="_blank"
@@ -46,10 +64,13 @@ export default function Home() {
             >
               Agendar Sessão
             </a>
+            <Link href="/tattoos" className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300 text-center">
+              Ver Tatuagens
+            </Link>
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.9s', animationFillMode: 'forwards' }}>
             <div className="flex flex-col items-center gap-2">
               <p className="text-accent text-xs uppercase tracking-widest font-light">Scroll</p>
               <svg className="w-5 h-5 text-accent animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,7 +84,7 @@ export default function Home() {
       <Divider />
 
       {/* About Section */}
-      <section className="py-24 md:py-40">
+      <section id="sobre" className="py-24 md:py-40">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div className="animate-slideInLeft">
@@ -85,9 +106,9 @@ export default function Home() {
             </div>
             <div className="relative animate-slideInRight">
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp"
+                src="/home/ubuntu/upload/pasted_file_NuHx6z_image.png"
                 alt="Leo Freitas"
-                className="w-full h-auto object-cover border-2 border-destructive animate-fadeInScale"
+                className="w-full h-auto object-cover border-2 border-destructive animate-fadeInScale grayscale hover:grayscale-0 transition-all duration-500"
               />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 border-2 border-destructive opacity-30" />
             </div>
