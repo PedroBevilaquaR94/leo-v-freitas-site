@@ -7,37 +7,37 @@ const tattooPortfolio = [
     id: 1,
     title: 'Retrato Realista',
     style: 'Realismo',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   },
   {
     id: 2,
     title: 'Portrait em Preto e Cinza',
     style: 'Portrait',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   },
   {
     id: 3,
     title: 'Composição Blackwork',
     style: 'Blackwork',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   },
   {
     id: 4,
     title: 'Homenagem Familiar',
     style: 'Realismo',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   },
   {
     id: 5,
     title: 'Detalhe em Preto',
     style: 'Blackwork',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   },
   {
     id: 6,
     title: 'Retrato Expressivo',
     style: 'Portrait',
-    image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp'
+    image: 'https://pages.greatpages.com.br/www.leovfreitastattoo.com.br/1763480969/imagens/desktop/99336-4a86540b0acd83e9e2c27d8b91fda7c0.JPG'
   }
 ];
 
@@ -71,11 +71,7 @@ export default function Tattoos() {
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         {/* Background Geométrico */}
         <div className="absolute inset-0 opacity-20">
-          <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-background-geometric-H9RuC8ALez2ctNUDCVjiWH.webp"
-            alt="background"
-            className="w-full h-full object-cover"
-          />
+          <div className="w-full h-full bg-gradient-to-br from-accent/10 to-destructive/5"></div>
         </div>
 
         {/* Corner Decorations */}
@@ -85,32 +81,27 @@ export default function Tattoos() {
         <div className="absolute bottom-0 right-0 w-20 h-20 border-r-2 border-b-2 border-accent/30"></div>
 
         <div className="container relative z-10 text-center max-w-4xl">
-          {/* Nome do Artista */}
-          <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
-            Leo V. Freitas
-          </p>
-
-          {/* Logo Centralizada - Grande */}
-          <div className="mb-12 animate-fadeInScale" style={{ animationDelay: '0.3s' }}>
+          {/* Logo Centralizada - Sem texto acima */}
+          <div className="mb-12 animate-fadeInScale" style={{ animationDelay: '0.2s' }}>
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/leo-logo-premium-4RqZqXvPqNjKLDCVmWJJhx.webp"
+              src="/manus-storage/pasted_file_O64l78_image_68697f9d.png"
               alt="Leo V. Freitas Logo"
-              className="h-40 md:h-56 mx-auto mb-12"
+              className="h-32 md:h-48 mx-auto mb-12 object-contain"
             />
           </div>
 
           {/* Subtítulo */}
-          <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
+          <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             Tatuagens em Realismo, Portrait e Blackwork
           </p>
 
           {/* Descrição */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 animate-fadeInUp" style={{ animationDelay: '0.7s' }}>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
             Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12 animate-fadeInUp" style={{ animationDelay: '0.9s' }}>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12 animate-fadeInUp" style={{ animationDelay: '0.7s' }}>
             <a
               href="https://wa.me/5543988627463"
               target="_blank"
@@ -128,7 +119,7 @@ export default function Tattoos() {
           </div>
 
           {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow" style={{ animationDelay: '1.2s' }}>
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow" style={{ animationDelay: '0.9s' }}>
             <p className="text-accent text-xs uppercase tracking-widest font-light mb-2">Scroll</p>
             <svg className="w-6 h-6 mx-auto text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
@@ -143,7 +134,7 @@ export default function Tattoos() {
       </div>
 
       {/* Sobre Section */}
-      <section className="py-20 md:py-32">
+      <section id="about" className="py-20 md:py-32">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             {/* Texto */}
@@ -167,7 +158,7 @@ export default function Tattoos() {
             {/* Foto */}
             <div className="relative animate-slideInRight" style={{ animationDelay: '0.2s' }}>
               <img
-                src="/home/ubuntu/upload/pasted_file_NuHx6z_image.png"
+                src="/manus-storage/pasted_file_NuHx6z_image_3d17ea24.png"
                 alt="Leo Freitas"
                 className="w-full h-auto object-cover border-2 border-destructive/40"
               />
@@ -395,6 +386,103 @@ export default function Tattoos() {
             <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="btn-secondary">
               Solicitar Orçamento
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
+
+      {/* Contato Section */}
+      <section id="contact" className="py-20 md:py-32">
+        <div className="container">
+          <div className="mb-20 text-center">
+            <p className="text-accent-sm mb-4">Contato</p>
+            <h2>Fale com Leo</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            {/* Informações de Contato */}
+            <div>
+              <h3 className="text-2xl font-bold text-accent mb-8">Localização</h3>
+              <div className="space-y-8">
+                <div>
+                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Endereço</p>
+                  <p className="text-lg text-muted-foreground">R. Alagoas, 792 - Centro</p>
+                  <p className="text-lg text-muted-foreground">Londrina - PR, 86010-520</p>
+                </div>
+                <div>
+                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Telefone/WhatsApp</p>
+                  <a href="https://wa.me/5543988627463" target="_blank" rel="noopener noreferrer" className="text-lg text-accent hover:text-accent/80 transition-colors">
+                    (43) 98862-7463
+                  </a>
+                </div>
+                <div>
+                  <p className="text-accent text-sm uppercase tracking-widest font-light mb-2">Horário</p>
+                  <p className="text-lg text-muted-foreground">Atendimento com horário agendado</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Mapa */}
+            <div>
+              <h3 className="text-2xl font-bold text-accent mb-8">Estúdio</h3>
+              <div className="w-full h-96 border-2 border-destructive/40 rounded-lg overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.8194638427047!2d-51.16960!3d-23.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f5d3c3c3c3c3c3%3A0x0!2sR.%20Alagoas%2C%20792%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-520!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="container my-12 md:my-20 text-center">
+        <p className="text-accent text-sm">◆ ◆ ◆</p>
+      </div>
+
+      {/* FAQ Section */}
+      <section className="py-20 md:py-32">
+        <div className="container">
+          <div className="mb-20 text-center">
+            <p className="text-accent-sm mb-4">Dúvidas</p>
+            <h2>Perguntas Frequentes</h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">Orçamento online?</h3>
+              <p className="text-muted-lg">Sim! Orçamento é feito online através do WhatsApp. Envie uma foto ou descrição do seu projeto.</p>
+            </div>
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">Tempo de resposta?</h3>
+              <p className="text-muted-lg">Entraremos em contato no mesmo dia. Atendimento rápido e profissional garantido.</p>
+            </div>
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">O que é Blackwork?</h3>
+              <p className="text-muted-lg">Trabalhos em preto com composições marcadas por linhas variadas, traços do mais grosso ao mais fino.</p>
+            </div>
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">Cuidados pré-tatuagem?</h3>
+              <p className="text-muted-lg">Pele deve estar saudável, limpa e hidratada. Evite sol e álcool 24h antes.</p>
+            </div>
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">Você cria projetos?</h3>
+              <p className="text-muted-lg">Sim! Todo projeto é exclusivo para cada cliente. Criamos algo especial para você.</p>
+            </div>
+            <div className="card-premium">
+              <h3 className="text-xl font-bold text-accent mb-4">Tatuagem dói?</h3>
+              <p className="text-muted-lg">Cada pessoa tem seu nível de dor, porém geralmente todos conseguem tatuar tranquilamente.</p>
+            </div>
           </div>
         </div>
       </section>
