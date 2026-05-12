@@ -71,14 +71,14 @@ export default function Tattoos() {
 
       {/* Hero Section - Premium Banner com Logo Masculina */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Background Pattern - Restaurado com padrão artístico */}
+        {/* Background Pattern - Novo padrão artístico geométrico */}
         <div className="absolute inset-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/background-pattern-artistic-ydXnKkJPHhLqZvWmN2pRtX.webp"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/background-artistic-geometric-new-XsekVaFDQRFttC7zSbPyjJ.webp"
             alt="Background Pattern"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
         {/* Decorative corners */}
@@ -135,7 +135,7 @@ export default function Tattoos() {
                 <img
                   src="/manus-storage/pasted_file_NuHx6z_image_d8e2c9f7.png"
                   alt="Leo V. Freitas"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-contain"
                 />
                 <div className="absolute inset-0 border-2 border-accent opacity-30"></div>
               </div>
@@ -172,7 +172,7 @@ export default function Tattoos() {
                 </div>
               </div>
 
-              <button className="px-8 py-3 bg-accent text-background hover:opacity-90 transition-all duration-300 font-serif text-sm uppercase tracking-wider w-full">
+              <button className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider w-full">
                 Agendar Sessão
               </button>
             </div>
@@ -223,7 +223,7 @@ export default function Tattoos() {
           <div className="relative max-w-3xl mx-auto">
             {/* Main Image - Diminuído mas mostrando imagem inteira */}
             <div className="relative overflow-hidden rounded-lg mb-8 bg-black/20 p-4">
-              <div className="relative overflow-hidden rounded-lg aspect-auto max-h-96">
+              <div className="relative overflow-hidden rounded-lg aspect-auto max-h-[500px]">
                 <img
                   src={filteredPortfolio[currentSlide]?.image}
                   alt={filteredPortfolio[currentSlide]?.title}
