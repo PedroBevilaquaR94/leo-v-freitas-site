@@ -65,35 +65,36 @@ export default function Tattoos() {
 
   const styles = ['Realismo', 'Portrait', 'Blackwork'];
 
+  const handleWhatsApp = () => {
+    window.open('https://wa.me/5543999999999?text=Olá%20Leo!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20tatuagem.', '_blank');
+  };
+
+  const handleInstagram = () => {
+    window.open('https://instagram.com/leovfreitastattoo', '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section - Premium Banner com Logo Masculina */}
+      {/* Hero Section - Apenas Fundo Art Deco */}
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Background Pattern - Novo padrão artístico geométrico */}
+        {/* Background - Fundo Art Deco Elegante */}
         <div className="absolute inset-0">
           <img
-            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/background-artistic-geometric-new-XsekVaFDQRFttC7zSbPyjJ.webp"
-            alt="Background Pattern"
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-background-clean-WmvPyabrLEEFDisaM3NWYq.webp"
+            alt="Hero Background"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
-        {/* Decorative corners */}
-        <div className="absolute top-0 left-0 w-32 h-32 border-t-2 border-l-2 border-accent opacity-50"></div>
-        <div className="absolute bottom-0 right-0 w-32 h-32 border-b-2 border-r-2 border-accent opacity-50"></div>
-
+        {/* Conteúdo Centralizado */}
         <div className="container relative z-10 text-center max-w-4xl">
-          {/* Logo Masculina e Poderosa - Centralizada */}
-          <div className="mb-8 animate-fadeInScale" style={{ animationDelay: '0.2s' }}>
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/leo-logo-masculine-WPTV9C2TPvAKzXrvRHBySX.webp"
-              alt="Leo V. Freitas Logo"
-              className="h-40 md:h-56 mx-auto object-contain drop-shadow-lg"
-            />
-          </div>
+          {/* Título Principal */}
+          <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-accent animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
+            LEO V. FREITAS
+          </h1>
 
           {/* Subtítulo */}
           <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
@@ -101,16 +102,22 @@ export default function Tattoos() {
           </p>
 
           {/* Descrição */}
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-12 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
             Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.
           </p>
 
-          {/* CTA Buttons */}
+          {/* CTA Buttons - Funcionais */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fadeInUp" style={{ animationDelay: '0.7s' }}>
-            <button className="px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300 font-serif text-sm uppercase tracking-wider">
+            <button 
+              onClick={handleWhatsApp}
+              className="px-8 py-3 border-2 border-accent text-accent hover:bg-accent hover:text-background transition-all duration-300 font-serif text-sm uppercase tracking-wider"
+            >
               Agendar Sessão
             </button>
-            <button className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider">
+            <button 
+              onClick={handleWhatsApp}
+              className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider"
+            >
               Agendar Agora
             </button>
           </div>
@@ -125,8 +132,8 @@ export default function Tattoos() {
         </div>
       </section>
 
-      {/* About Section - Com Foto do Leo (ANTES DO PORTFÓLIO) */}
-      <section className="py-20 md:py-32 bg-card relative">
+      {/* About Section */}
+      <section className="py-20 md:py-32 bg-background relative">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Foto do Leo */}
@@ -172,7 +179,10 @@ export default function Tattoos() {
                 </div>
               </div>
 
-              <button className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider w-full">
+              <button 
+                onClick={handleWhatsApp}
+                className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider w-full"
+              >
                 Agendar Sessão
               </button>
             </div>
@@ -180,7 +190,7 @@ export default function Tattoos() {
         </div>
       </section>
 
-      {/* Portfolio Section - DEPOIS DO SOBRE */}
+      {/* Portfolio Section */}
       <section className="py-20 md:py-32 bg-background relative">
         <div className="container">
           {/* Section Title */}
@@ -219,9 +229,9 @@ export default function Tattoos() {
             ))}
           </div>
 
-          {/* Carousel - Mostrar tatuagens inteiras */}
+          {/* Carousel */}
           <div className="relative max-w-3xl mx-auto">
-            {/* Main Image - Diminuído mas mostrando imagem inteira */}
+            {/* Main Image */}
             <div className="relative overflow-hidden rounded-lg mb-8 bg-black/20 p-4">
               <div className="relative overflow-hidden rounded-lg aspect-auto max-h-[500px]">
                 <img
@@ -233,6 +243,19 @@ export default function Tattoos() {
               <div className="absolute inset-0 border-2 border-accent opacity-30 rounded-lg m-4"></div>
             </div>
 
+            {/* Title and Style */}
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-serif font-bold text-foreground mb-2">
+                {filteredPortfolio[currentSlide]?.title}
+              </h3>
+              <p className="text-accent text-sm uppercase tracking-widest">
+                {filteredPortfolio[currentSlide]?.style}
+              </p>
+              <p className="text-muted-foreground text-sm mt-2">
+                {currentSlide + 1} / {filteredPortfolio.length}
+              </p>
+            </div>
+
             {/* Navigation Buttons */}
             <div className="flex justify-between items-center mb-8">
               <button
@@ -242,16 +265,25 @@ export default function Tattoos() {
                 <ChevronLeft size={24} />
               </button>
 
-              <div className="text-center flex-1 mx-4">
-                <h3 className="text-xl font-serif font-bold mb-2">
-                  {filteredPortfolio[currentSlide]?.title}
-                </h3>
-                <p className="text-accent text-sm uppercase tracking-wider">
-                  {filteredPortfolio[currentSlide]?.style}
-                </p>
-                <p className="text-muted-foreground text-sm mt-2">
-                  {currentSlide + 1} / {filteredPortfolio.length}
-                </p>
+              {/* Thumbnails */}
+              <div className="flex gap-2 overflow-x-auto px-4">
+                {filteredPortfolio.map((item, index) => (
+                  <button
+                    key={item.id}
+                    onClick={() => setCurrentSlide(index)}
+                    className={`flex-shrink-0 w-16 h-16 border-2 transition-all duration-300 ${
+                      index === currentSlide
+                        ? 'border-accent'
+                        : 'border-accent border-opacity-30 hover:border-opacity-100'
+                    }`}
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
               </div>
 
               <button
@@ -261,33 +293,12 @@ export default function Tattoos() {
                 <ChevronRight size={24} />
               </button>
             </div>
-
-            {/* Thumbnails */}
-            <div className="grid grid-cols-6 gap-2">
-              {filteredPortfolio.map((tattoo, index) => (
-                <button
-                  key={tattoo.id}
-                  onClick={() => setCurrentSlide(index)}
-                  className={`aspect-square overflow-hidden border-2 transition-all duration-300 ${
-                    currentSlide === index
-                      ? 'border-accent'
-                      : 'border-muted opacity-50 hover:opacity-75'
-                  }`}
-                >
-                  <img
-                    src={tattoo.image}
-                    alt={tattoo.title}
-                    className="w-full h-full object-cover"
-                  />
-                </button>
-              ))}
-            </div>
           </div>
         </div>
       </section>
 
-      {/* Styles Section */}
-      <section className="py-20 md:py-32 bg-card relative">
+      {/* Specialties Section */}
+      <section className="py-20 md:py-32 bg-background/50 relative">
         <div className="container">
           <div className="text-center mb-16">
             <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Especialidades</p>
@@ -314,9 +325,9 @@ export default function Tattoos() {
             ].map((style, index) => (
               <div
                 key={index}
-                className="p-8 border-2 border-accent border-opacity-30 hover:border-opacity-100 transition-all duration-300 rounded-lg"
+                className="p-8 border-2 border-accent border-opacity-20 hover:border-opacity-100 transition-all duration-300 text-center"
               >
-                <h3 className="text-2xl font-serif font-bold mb-4 text-accent">{style.title}</h3>
+                <h3 className="text-2xl font-serif font-bold text-accent mb-4">{style.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{style.description}</p>
               </div>
             ))}
@@ -335,22 +346,36 @@ export default function Tattoos() {
             <div className="w-16 h-1 bg-accent mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Localização</p>
-              <p className="text-muted-foreground">Londrina, Paraná - Brasil</p>
+              <p className="text-accent text-sm uppercase tracking-widest mb-2 font-light">Localização</p>
+              <p className="text-foreground font-serif text-lg">Londrina, Paraná - Brasil</p>
             </div>
             <div className="text-center">
-              <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">WhatsApp</p>
-              <p className="text-muted-foreground">(43) 99999-9999</p>
+              <p className="text-accent text-sm uppercase tracking-widest mb-2 font-light">WhatsApp</p>
+              <button
+                onClick={handleWhatsApp}
+                className="text-foreground font-serif text-lg hover:text-accent transition-colors duration-300"
+              >
+                (43) 99999-9999
+              </button>
             </div>
             <div className="text-center">
-              <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Instagram</p>
-              <p className="text-muted-foreground">@leovfreitastattoo</p>
+              <p className="text-accent text-sm uppercase tracking-widest mb-2 font-light">Instagram</p>
+              <button
+                onClick={handleInstagram}
+                className="text-foreground font-serif text-lg hover:text-accent transition-colors duration-300"
+              >
+                @leovfreitastattoo
+              </button>
             </div>
           </div>
 
-          <div className="mt-12 text-center">            <button className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider">
+          <div className="text-center">
+            <button
+              onClick={handleWhatsApp}
+              className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider"
+            >
               Agendar Sessão
             </button>
           </div>
