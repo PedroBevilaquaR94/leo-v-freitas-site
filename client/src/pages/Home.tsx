@@ -7,8 +7,8 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
 
-      {/* Hero Section */}
-      <section className="pt-40 pb-24 md:pt-56 md:pb-40 relative overflow-hidden">
+      {/* Hero Section - Centralizado */}
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
         <div className="absolute inset-0 opacity-5">
           <img
             src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/pattern-abstract-dark-4YSHvKtDXrQe3EUBVLk6Dt.webp"
@@ -17,27 +17,44 @@ export default function Home() {
           />
         </div>
 
-        <div className="container relative z-10">
-          <div className="max-w-3xl">
-            <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp animate-delay-100">Leo V. Freitas</p>
-            <h1 className="mb-8 leading-tight animate-fadeInUp animate-delay-200 animate-glowPulse">
-              Realismo com <span className="text-accent">identidade</span> e propósito
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed max-w-2xl animate-fadeInUp animate-delay-300">
-              Tatuagens em Londrina com traços intensos, autorais e cheios de personalidade. Cada projeto é pensado para refletir quem você é — arte, técnica e autenticidade em cada detalhe.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 animate-fadeInUp animate-delay-400">
-              <Link href="/tattoos" className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300 text-center">
-                Ver Tatuagens
-              </Link>
-              <a
-                href="https://wa.me/5543988627463"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-opacity-90 transition-all duration-300 text-center"
-              >
-                Agendar Sessão
-              </a>
+        <div className="container relative z-10 text-center max-w-4xl">
+          <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light opacity-0 animate-fadeInUp" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
+            Leo V. Freitas
+          </p>
+          
+          <h1 className="mb-6 leading-tight opacity-0 animate-fadeInUp animate-glowPulse" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+            Realismo com <span className="text-accent">identidade</span>
+          </h1>
+
+          <h1 className="mb-12 leading-tight opacity-0 animate-fadeInUp" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+            e propósito
+          </h1>
+          
+          <p className="text-lg md:text-xl text-muted-foreground mb-16 leading-relaxed opacity-0 animate-fadeInUp" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
+            Tatuagens em Londrina com traços intensos, autorais e cheios de personalidade. Cada projeto é pensado para refletir quem você é — arte, técnica e autenticidade em cada detalhe.
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-6 justify-center opacity-0 animate-fadeInUp" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>
+            <Link href="/tattoos" className="px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300 text-center">
+              Ver Tatuagens
+            </Link>
+            <a
+              href="https://wa.me/5543988627463"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-accent text-primary uppercase text-sm tracking-widest font-medium hover:bg-opacity-90 transition-all duration-300 text-center"
+            >
+              Agendar Sessão
+            </a>
+          </div>
+
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 opacity-0 animate-fadeInUp" style={{ animationDelay: '0.7s', animationFillMode: 'forwards' }}>
+            <div className="flex flex-col items-center gap-2">
+              <p className="text-accent text-xs uppercase tracking-widest font-light">Scroll</p>
+              <svg className="w-5 h-5 text-accent animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
             </div>
           </div>
         </div>
@@ -78,15 +95,15 @@ export default function Home() {
 
           {/* Stats */}
           <div className="grid md:grid-cols-3 gap-12 mt-24">
-            <div className="text-center animate-fadeInUp animate-delay-100">
+            <div className="text-center animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">9+</p>
               <p className="text-muted-foreground uppercase text-sm tracking-widest">Anos de Experiência</p>
             </div>
-            <div className="text-center animate-fadeInUp animate-delay-200">
+            <div className="text-center animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">600+</p>
               <p className="text-muted-foreground uppercase text-sm tracking-widest">Trabalhos Realizados</p>
             </div>
-            <div className="text-center animate-fadeInUp animate-delay-300">
+            <div className="text-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
               <p className="text-5xl md:text-6xl font-bold text-accent mb-2">100%</p>
               <p className="text-muted-foreground uppercase text-sm tracking-widest">Satisfação</p>
             </div>
@@ -118,7 +135,7 @@ export default function Home() {
                 description: 'Trabalhos em preto sólido com composições fluidas e alto contraste, criando impacto visual máximo.'
               }
             ].map((service, idx) => (
-              <div key={idx} className={`border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300 animate-fadeInUp animate-delay-${(idx + 1) * 100}`}>
+              <div key={idx} className="border-2 border-destructive/40 p-12 hover:border-accent transition-colors duration-300 animate-fadeInUp" style={{ animationDelay: `${(idx + 1) * 100}ms` }}>
                 <h3 className="text-2xl font-bold text-accent mb-6">{service.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-lg">{service.description}</p>
               </div>
@@ -137,7 +154,7 @@ export default function Home() {
             <h2>Trabalhos Selecionados</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12 mb-16">
-            <Link href="/tattoos" className="group relative overflow-hidden aspect-square animate-fadeInUp animate-delay-100">
+            <Link href="/tattoos" className="group relative overflow-hidden aspect-square animate-fadeInUp" style={{ animationDelay: '0.1s' }}>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-tattoo-realistic-WwXBgLfrNBUtSDukeaZ5xo.webp"
                 alt="Tatuagens"
@@ -147,7 +164,7 @@ export default function Home() {
                 <h3 className="text-4xl font-bold text-accent text-center">Tatuagens</h3>
               </div>
             </Link>
-            <Link href="/quadros" className="group relative overflow-hidden aspect-square animate-fadeInUp animate-delay-200">
+            <Link href="/quadros" className="group relative overflow-hidden aspect-square animate-fadeInUp" style={{ animationDelay: '0.2s' }}>
               <img
                 src="https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/hero-quadro-oleo-cuFMctBA2XtBT8wdfDDpzh.webp"
                 alt="Quadros"
@@ -158,7 +175,7 @@ export default function Home() {
               </div>
             </Link>
           </div>
-          <div className="text-center animate-fadeInUp animate-delay-300">
+          <div className="text-center animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             <Link href="/tattoos" className="inline-block px-8 py-3 border-2 border-accent text-accent uppercase text-sm tracking-widest font-medium hover:bg-accent hover:text-primary transition-all duration-300">
               Explorar Portfólio Completo
             </Link>
