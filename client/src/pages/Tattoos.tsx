@@ -139,7 +139,7 @@ export default function Tattoos() {
       <Header />
 
       {/* Hero Section - Logo do Leão com Fundo Escuro */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-0">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-24 md:pt-32">
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
@@ -155,13 +155,13 @@ export default function Tattoos() {
         </div>
 
         {/* Conteúdo Centralizado */}
-        <div className="container relative z-10 text-center max-w-5xl px-4 md:px-8 py-12 md:py-16">
+        <div className="container relative z-10 text-center max-w-5xl px-4 md:px-8 py-8 md:py-12">
           {/* Logo do Leão - Centralizada e Completa */}
-          <div className="mb-12 md:mb-16 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
+          <div className="mb-8 md:mb-12 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
             <img
               src="/manus-storage/leo-logo-masculine_67cfc420.png"
               alt="Leo V. Freitas Logo"
-              className="h-48 sm:h-56 md:h-72 lg:h-80 object-contain drop-shadow-2xl"
+              className="h-56 sm:h-64 md:h-80 lg:h-96 object-contain drop-shadow-2xl"
             />
           </div>
 
