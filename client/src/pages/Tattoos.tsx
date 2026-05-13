@@ -141,7 +141,7 @@ export default function Tattoos() {
       </section>
 
       {/* About Section */}
-      <section className="py-20 md:py-32 bg-background relative">
+      <section id="about" className="py-20 md:py-32 bg-background relative scroll-mt-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Foto do Leo */}
@@ -199,7 +199,7 @@ export default function Tattoos() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="py-20 md:py-32 bg-background relative">
+      <section id="portfolio" className="py-20 md:py-32 bg-background relative scroll-mt-20">
         <div className="container">
           {/* Section Title */}
           <div className="text-center mb-16">
@@ -344,7 +344,7 @@ export default function Tattoos() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 md:py-32 bg-background relative">
+      <section id="contact" className="py-20 md:py-32 bg-background relative scroll-mt-20">
         <div className="container">
           <div className="text-center mb-16">
             <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Contato</p>
