@@ -102,39 +102,39 @@ export default function Tattoos() {
       <Header />
 
       {/* Hero Section - Logo do Leão com Fundo Escuro */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-0">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 md:pt-0">
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
             src="/manus-storage/hero-banner-leo_0c2ba533.png"
             alt="Hero Background"
-            className="w-full h-full object-cover md:object-cover sm:object-center"
+            className="w-full h-full object-cover"
             style={{
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}
           />
-          <div className="absolute inset-0 bg-black/80"></div>
+          <div className="absolute inset-0 bg-black/75"></div>
         </div>
 
         {/* Conteúdo Centralizado */}
-        <div className="container relative z-10 text-center max-w-4xl px-4 py-8">
+        <div className="container relative z-10 text-center max-w-5xl px-4 md:px-8 py-12 md:py-16">
           {/* Logo do Leão - Centralizada e Completa */}
-          <div className="mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
+          <div className="mb-12 md:mb-16 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
             <img
               src="/manus-storage/leo-logo-masculine_67cfc420.png"
               alt="Leo V. Freitas Logo"
-              className="h-40 sm:h-48 md:h-64 object-contain drop-shadow-lg"
+              className="h-48 sm:h-56 md:h-72 lg:h-80 object-contain drop-shadow-2xl"
             />
           </div>
 
           {/* Subtítulo */}
-          <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+          <p className="text-accent text-xs md:text-sm uppercase tracking-widest mb-6 md:mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             Tatuagens em Realismo, Portrait e Blackwork
           </p>
 
           {/* Descrição */}
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-12 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
+          <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-14 md:mb-16 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
             Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.
           </p>
 

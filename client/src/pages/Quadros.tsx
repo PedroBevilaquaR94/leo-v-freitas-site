@@ -56,6 +56,60 @@ const quadrosPortfolio = [
     year: '2024',
     description: 'Paisagem serena com paleta equilibrada de cores quentes e frias, transmitindo paz e contemplação.',
     image: 'https://d2xsxph8kpxj0f.cloudfront.net/310519663174737934/AD7j4ZJdmTvG7jXfmqT9Xk/quadro-6-oleo-harmonia-edFPLsEyQLcw7fYCa4XWMr.webp'
+  },
+  {
+    id: 7,
+    title: 'Leoa Majestosa',
+    technique: 'Óleo sobre tela',
+    size: '90 x 70 cm',
+    year: '2024',
+    description: 'Retrato expressivo de uma leoa com olhar penetrante, capturando a força e a beleza selvagem em tons quentes.',
+    image: '/manus-storage/pasted_file_RnVXfu_image_f8c40231.png'
+  },
+  {
+    id: 8,
+    title: 'Cavalo na Água',
+    technique: 'Óleo sobre tela',
+    size: '100 x 75 cm',
+    year: '2024',
+    description: 'Cavalo em movimento na água, com fundo de flores amarelas, transmitindo liberdade e graça.',
+    image: '/manus-storage/pasted_file_TA5n5J_image_3c32ce90.png'
+  },
+  {
+    id: 9,
+    title: 'Caveira em Chamas',
+    technique: 'Óleo sobre tela',
+    size: '80 x 60 cm',
+    year: '2024',
+    description: 'Composição dramática com caveira envolvida em chamas azuis e laranjas, simbolizando transformação e poder.',
+    image: '/manus-storage/pasted_file_1AByRR_image_ee49dcea.png'
+  },
+  {
+    id: 10,
+    title: 'Retrato Clássico - Homem Barbado',
+    technique: 'Desenho a carvão',
+    size: '70 x 50 cm',
+    year: '2024',
+    description: 'Retrato clássico de um homem com barba e cabelos longos, executado com técnica refinada de carvão.',
+    image: '/manus-storage/pasted_file_wE6vRX_image_eba4f27d.png'
+  },
+  {
+    id: 11,
+    title: 'Mulher com Turbante',
+    technique: 'Desenho a carvão',
+    size: '75 x 55 cm',
+    year: '2024',
+    description: 'Retrato delicado de uma mulher com turbante, demonstrando maestria em técnica de sombreamento.',
+    image: '/manus-storage/pasted_file_zZIaru_image_9efeba96.png'
+  },
+  {
+    id: 12,
+    title: 'Sábio com Barba Longa',
+    technique: 'Desenho a carvão',
+    size: '80 x 60 cm',
+    year: '2024',
+    description: 'Retrato expressivo de um homem sábio com barba longa, capturando profundidade e caráter.',
+    image: '/manus-storage/pasted_file_NV7VCx_image_dfc905dd.png'
   }
 ];
 
