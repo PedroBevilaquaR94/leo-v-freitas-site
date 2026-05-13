@@ -139,7 +139,7 @@ export default function Tattoos() {
       <Header />
 
       {/* Hero Section - Logo do Leão com Fundo Escuro */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-28">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-12 md:pt-16">
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
