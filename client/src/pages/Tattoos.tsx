@@ -41,34 +41,55 @@ const tattooPortfolio = [
     style: 'Portrait',
     image: '/manus-storage/Screenshot2026-05-12at16.34.15_f20cb0bb.png'
   },
+
+];
+
+const coberturasPortfolio = [
   {
-    id: 7,
-    title: 'Cobertura Realista Expressiva',
-    style: 'Coberturas',
+    id: 1,
+    title: 'Cobertura 1',
     image: '/manus-storage/pasted_file_1A68tL_image_0d814324.png'
   },
   {
-    id: 8,
-    title: 'Cobertura Retrato Detalhado',
-    style: 'Coberturas',
+    id: 2,
+    title: 'Cobertura 2',
     image: '/manus-storage/pasted_file_j9ekOU_image_e8b60ee6.png'
   },
   {
-    id: 9,
-    title: 'Cobertura Rosto Artístico',
-    style: 'Coberturas',
+    id: 3,
+    title: 'Cobertura 3',
     image: '/manus-storage/pasted_file_8ddxII_image_eaa3eb57.png'
   },
   {
-    id: 10,
-    title: 'Cobertura Personagem Expressivo',
-    style: 'Coberturas',
+    id: 4,
+    title: 'Cobertura 4',
     image: '/manus-storage/pasted_file_LxVvKh_image_35594e47.png'
+  },
+  {
+    id: 5,
+    title: 'Cobertura 5',
+    image: '/manus-storage/pasted_file_DvQ6eq_image_1234567a.png'
+  },
+  {
+    id: 6,
+    title: 'Cobertura 6',
+    image: '/manus-storage/pasted_file_wxN8Yh_image_2345678b.png'
+  },
+  {
+    id: 7,
+    title: 'Cobertura 7',
+    image: '/manus-storage/pasted_file_J1Mw78_image_3456789c.png'
+  },
+  {
+    id: 8,
+    title: 'Cobertura 8',
+    image: '/manus-storage/pasted_file_RVh7sN_image_456789ad.png'
   }
 ];
 
 export default function Tattoos() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentCoberturaSlide, setCurrentCoberturaSlide] = useState(0);
   const [selectedStyle, setSelectedStyle] = useState<string | null>(null);
 
   const filteredPortfolio = selectedStyle
@@ -83,11 +104,19 @@ export default function Tattoos() {
     setCurrentSlide((prev) => (prev - 1 + filteredPortfolio.length) % filteredPortfolio.length);
   };
 
+  const nextCobertura = () => {
+    setCurrentCoberturaSlide((prev) => (prev + 1) % coberturasPortfolio.length);
+  };
+
+  const prevCobertura = () => {
+    setCurrentCoberturaSlide((prev) => (prev - 1 + coberturasPortfolio.length) % coberturasPortfolio.length);
+  };
+
   useEffect(() => {
     setCurrentSlide(0);
   }, [selectedStyle]);
 
-  const styles = ['Realismo', 'Portrait', 'Blackwork', 'Coberturas'];
+  const styles = ['Realismo', 'Portrait', 'Blackwork'];
 
   const handleWhatsApp = () => {
     window.open('https://wa.me/5543988627463', '_blank');
@@ -164,8 +193,98 @@ export default function Tattoos() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="py-20 md:py-32 bg-background relative scroll-mt-20">
+       {/* Coberturas Section */}
+      <section className="py-20 md:py-32 bg-background relative scroll-mt-20">
+        <div className="container">
+          <div className="text-center mb-16">
+            <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Especializações</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
+              Coberturas
+            </h2>
+            <div className="w-16 h-1 bg-accent mx-auto"></div>
+          </div>
+
+          {/* Coberturas Carousel */}
+          <div className="relative max-w-4xl mx-auto mb-12">
+            {/* Main Image */}
+            <div className="relative overflow-hidden rounded-lg mb-8 bg-black/20 p-4">
+              <div className="relative overflow-hidden rounded-lg bg-black/40 flex items-center justify-center min-h-[400px] md:min-h-[600px]">
+                <img
+                  src={coberturasPortfolio[currentCoberturaSlide]?.image}
+                  alt={coberturasPortfolio[currentCoberturaSlide]?.title}
+                  className="w-full h-full object-contain max-h-[600px] md:max-h-[700px]"
+                />
+              </div>
+              <div className="absolute inset-0 border-2 border-accent opacity-30 rounded-lg m-4"></div>
+            </div>
+
+            {/* Navigation */}
+            <div className="flex justify-between items-center">
+              <button
+                onClick={prevCobertura}
+                className="p-2 rounded-full bg-accent/20 hover:bg-accent/40 text-accent transition-all duration-300"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              <div className="text-center flex-1">
+                <p className="text-accent text-sm mb-2">{currentCoberturaSlide + 1} / {coberturasPortfolio.length}</p>
+              </div>
+              <button
+                onClick={nextCobertura}
+                className="p-2 rounded-full bg-accent/20 hover:bg-accent/40 text-accent transition-all duration-300"
+              >
+                <ChevronRight size={24} />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Depoimentos Section */}
+      <section className="py-20 md:py-32 bg-background relative scroll-mt-20">
+        <div className="container">
+          <div className="text-center mb-16">
+            <p className="text-accent text-sm uppercase tracking-widest mb-4 font-light">Depoimentos</p>
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
+              O Que Meus Clientes Dizem
+            </h2>
+            <div className="w-16 h-1 bg-accent mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                name: 'Cliente Satisfeito',
+                text: 'Experiência incrível! Leo é um profissional dedicado que ouve e entende perfeitamente o que você quer. Minha tatuagem ficou exatamente como imaginei.',
+                rating: 5
+              },
+              {
+                name: 'Outro Cliente',
+                text: 'Qualidade excepcional. Leo combina técnica perfeita com criatividade artística. Recomendo para qualquer pessoa que busca uma tatuagem de verdade.',
+                rating: 5
+              },
+              {
+                name: 'Cliente Feliz',
+                text: 'Profissionalismo do início ao fim. O atendimento é excelente e o resultado final superou minhas expectativas. Com certeza voltarei!',
+                rating: 5
+              }
+            ].map((depoimento, index) => (
+              <div key={index} className="p-8 border-2 border-accent border-opacity-20 hover:border-opacity-100 transition-all duration-300 text-center">
+                <div className="flex justify-center gap-1 mb-4">
+                  {[...Array(depoimento.rating)].map((_, i) => (
+                    <span key={i} className="text-accent text-xl">★</span>
+                  ))}
+                </div>
+                <p className="text-muted-foreground leading-relaxed mb-6 italic">"{depoimento.text}"</p>
+                <p className="text-foreground font-serif font-bold">{depoimento.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Especialidades Section */}
+      <section className="py-20 md:py-32 bg-background relative scroll-mt-20">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Foto do Leo */}
