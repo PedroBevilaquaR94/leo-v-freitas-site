@@ -66,7 +66,7 @@ export default function Tattoos() {
   const styles = ['Realismo', 'Portrait', 'Blackwork'];
 
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5543999999999?text=Olá%20Leo!%20Gostaria%20de%20agendar%20uma%20sessão%20de%20tatuagem.', '_blank');
+    window.open('https://wa.me/5543988627463', '_blank');
   };
 
   const handleInstagram = () => {
@@ -357,7 +357,8 @@ export default function Tattoos() {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
               <p className="text-accent text-sm uppercase tracking-widest mb-2 font-light">Localização</p>
-              <p className="text-foreground font-serif text-lg">Londrina, Paraná - Brasil</p>
+              <p className="text-foreground font-serif text-lg">R. Alagoas, 792 - Centro</p>
+              <p className="text-foreground font-serif text-lg">Londrina - PR, 86010-520</p>
             </div>
             <div className="text-center">
               <p className="text-accent text-sm uppercase tracking-widest mb-2 font-light">WhatsApp</p>
@@ -365,7 +366,7 @@ export default function Tattoos() {
                 onClick={handleWhatsApp}
                 className="text-foreground font-serif text-lg hover:text-accent transition-colors duration-300"
               >
-                (43) 99999-9999
+                (43) 98862-7463
               </button>
             </div>
             <div className="text-center">
@@ -377,6 +378,20 @@ export default function Tattoos() {
                 @leovfreitastattoo
               </button>
             </div>
+          </div>
+
+          {/* Map Section */}
+          <div className="mt-16 rounded-lg overflow-hidden border-2 border-accent border-opacity-30">
+            <iframe
+              width="100%"
+              height="400"
+              frameBorder={0}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5432109876543!2d-51.4609!3d-23.3045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f4d4d4d4d4d4d5%3A0x1234567890abcdef!2sR.%20Alagoas%2C%20792%20-%20Centro%2C%20Londrina%20-%20PR%2C%2086010-520!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+            ></iframe>
           </div>
 
           <div className="text-center">
