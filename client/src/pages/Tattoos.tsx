@@ -148,7 +148,7 @@ export default function Tattoos() {
             <div className="relative animate-fadeInLeft" style={{ animationDelay: '0.2s' }}>
               <div className="relative overflow-hidden rounded-lg">
                 <img
-                  src="/manus-storage/pasted_file_NuHx6z_image_d8e2c9f7.png"
+                  src="/manus-storage/pasted_file_NuHx6z_image_456db5dd.png"
                   alt="Leo V. Freitas"
                   className="w-full h-auto object-contain"
                 />
