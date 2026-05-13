@@ -485,6 +485,90 @@ export default function Tattoos() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 md:py-32 bg-background/50 relative">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-foreground">
+              Dúvidas Frequentes
+            </h2>
+            <div className="w-16 h-1 bg-accent mx-auto"></div>
+          </div>
+
+          <div className="max-w-3xl mx-auto space-y-4">
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Orçamento pode ser feito online?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Sim! Você pode enviar fotos, descrever a ideia e receber um orçamento sem compromisso. Também oferecemos consulta presencial para discutir detalhes.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Qual o tempo de resposta?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Respondemos em até 24 horas via WhatsApp ou email. Para consultas mais complexas, agendamos uma conversa direta.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">O que é Blackwork?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Blackwork é um estilo de tatuagem que utiliza apenas tinta preta em diferentes tonalidades e densidades. Cria designs geométricos, tribais e abstratos com forte impacto visual.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Que cuidados exigem a pele antes de ser tatuada?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                A pele deve estar hidratada, limpa e sem ferimentos. Evite sol, bebidas alcoólicas 24h antes e durma bem. Não faça tatuagem em pele inflamada ou com problemas dermatológicos.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Você dá Workshop particular?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Sim! Oferecemos workshops particulares para interessados em aprender técnicas de tatuagem. Entre em contato para mais informações e disponibilidade.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Tatuagem dói?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Sim, tatuagem causa incômodo, mas o nível de dor varia conforme a localização, tamanho e sensibilidade individual. A maioria das pessoas relata ser tolerável.
+              </div>
+            </details>
+
+            <details className="group border border-accent/30 rounded-lg overflow-hidden hover:border-accent/60 transition-colors">
+              <summary className="flex items-center justify-between p-6 cursor-pointer bg-background/50 group-open:bg-background">
+                <span className="text-lg font-medium text-foreground">Não sei o que tatuar, você cria o meu projeto?</span>
+                <span className="text-accent text-2xl group-open:rotate-45 transition-transform duration-300">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-muted-foreground border-t border-accent/20">
+                Claro! Podemos conversar sobre suas ideias, gostos e significados. Vou criar um design personalizado que reflita sua personalidade e visão.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 md:py-32 bg-background relative scroll-mt-20">
         <div className="container">
