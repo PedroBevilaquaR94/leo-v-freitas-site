@@ -128,11 +128,11 @@ export default function Quadros() {
           <div className="relative max-w-4xl mx-auto">
             {/* Main Image */}
             <div className="relative overflow-hidden rounded-lg mb-8 bg-black/20 p-4">
-              <div className="relative overflow-hidden rounded-lg bg-black/40 flex items-center justify-center min-h-[400px] md:min-h-[600px]">
+              <div className="relative overflow-hidden rounded-lg bg-black/40 flex items-center justify-center w-full aspect-square md:aspect-auto md:h-[600px]">
                 <img
                   src={quadrosPortfolio[currentSlide]?.image}
                   alt={quadrosPortfolio[currentSlide]?.title}
-                  className="w-full h-full object-contain max-h-[600px] md:max-h-[700px]"
+                  className="w-full h-full object-contain"
                 />
               </div>
               <div className="absolute inset-0 border-2 border-accent opacity-30 rounded-lg m-4"></div>
