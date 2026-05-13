@@ -76,7 +76,7 @@ export default function Quadros() {
               Quadros & Telas
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Cada pincelada é uma reflexão da alma. Minhas obras exploram a profundidade das emoções humanas através de técnicas clássicas de óleo e carvão, criando composições que transcendem o visual e tocam o espírito.
+              Obras originais em óleo e carvão. Cada quadro é criado com técnica profissional, explorando composição, luz e detalhes. Disponíveis para encomenda personalizadas com tamanho e tema de sua escolha.
             </p>
             <div className="w-16 h-1 bg-accent mx-auto mt-8"></div>
           </div>
