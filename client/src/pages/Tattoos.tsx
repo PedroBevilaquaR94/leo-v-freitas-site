@@ -183,6 +183,12 @@ export default function Tattoos() {
             >
               Agendar Sessão
             </button>
+            <a
+              href="/quadros"
+              className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider flex items-center justify-center"
+            >
+              Sessão de Quadros
+            </a>
             <button 
               onClick={handleWhatsApp}
               className="px-8 py-3 bg-accent text-background hover:bg-accent/90 transition-all duration-300 font-serif text-sm uppercase tracking-wider"
