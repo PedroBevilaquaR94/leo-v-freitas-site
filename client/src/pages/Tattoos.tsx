@@ -40,6 +40,30 @@ const tattooPortfolio = [
     title: 'Retrato Expressivo',
     style: 'Portrait',
     image: '/manus-storage/Screenshot2026-05-12at16.34.15_f20cb0bb.png'
+  },
+  {
+    id: 7,
+    title: 'Cobertura Realista Expressiva',
+    style: 'Coberturas',
+    image: '/manus-storage/pasted_file_1A68tL_image_0d814324.png'
+  },
+  {
+    id: 8,
+    title: 'Cobertura Retrato Detalhado',
+    style: 'Coberturas',
+    image: '/manus-storage/pasted_file_j9ekOU_image_e8b60ee6.png'
+  },
+  {
+    id: 9,
+    title: 'Cobertura Rosto Artístico',
+    style: 'Coberturas',
+    image: '/manus-storage/pasted_file_8ddxII_image_eaa3eb57.png'
+  },
+  {
+    id: 10,
+    title: 'Cobertura Personagem Expressivo',
+    style: 'Coberturas',
+    image: '/manus-storage/pasted_file_LxVvKh_image_35594e47.png'
   }
 ];
 
@@ -63,7 +87,7 @@ export default function Tattoos() {
     setCurrentSlide(0);
   }, [selectedStyle]);
 
-  const styles = ['Realismo', 'Portrait', 'Blackwork'];
+  const styles = ['Realismo', 'Portrait', 'Blackwork', 'Coberturas'];
 
   const handleWhatsApp = () => {
     window.open('https://wa.me/5543988627463', '_blank');
