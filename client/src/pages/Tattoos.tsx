@@ -143,7 +143,7 @@ export default function Tattoos() {
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/hero-banner-leo-dark_7c7f02d9.png"
+            src="/manus-storage/hero-banner-leo-darker_1bce75ab.png"
             alt="Hero Background"
             className="w-full h-full object-cover"
             style={{
@@ -151,7 +151,7 @@ export default function Tattoos() {
               backgroundPosition: 'center'
             }}
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         {/* Conteúdo Centralizado */}
