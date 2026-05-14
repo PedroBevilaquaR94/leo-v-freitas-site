@@ -11,7 +11,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
           <div className="text-accent font-bold text-xl tracking-widest">
-            LEO V.<br className="hidden" /> FREITAS
+            LEO<br className="hidden" /> FREITAS
           </div>
         </Link>
 

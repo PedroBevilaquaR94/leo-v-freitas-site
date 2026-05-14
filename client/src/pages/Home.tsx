@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="container relative z-10 text-center max-w-4xl">
           <p className="text-accent text-sm uppercase tracking-widest mb-8 font-light opacity-0 animate-fadeInUp" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>
-            Leo V. Freitas
+            Leo Freitas
           </p>
 
           <h1 className="mb-4 leading-tight opacity-0 animate-fadeInUp animate-glowPulse" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
@@ -249,7 +249,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="border-t border-destructive/30 py-12">
         <div className="container text-center text-muted-foreground text-sm">
-          <p className="mb-2">© 2026 Leo V. Freitas. Todos os direitos reservados.</p>
+          <p className="mb-2">© 2026 Leo Freitas. Todos os direitos reservados.</p>
           <p>Realismo com identidade e propósito</p>
         </div>
       </footer>

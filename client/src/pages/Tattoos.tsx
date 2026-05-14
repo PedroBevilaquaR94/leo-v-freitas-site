@@ -156,11 +156,11 @@ export default function Tattoos() {
 
         {/* Conteúdo Centralizado */}
         <div className="container relative z-10 text-center max-w-5xl px-4 md:px-8 py-8 md:py-12">
-          {/* Logo do Leão - Centralizada e Completa */}
+          {/* Logo LF - Centralizada e Completa */}
           <div className="mb-6 md:mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
             <img
-              src="/manus-storage/leo-logo-masculine_67cfc420.png"
-              alt="Leo V. Freitas Logo"
+              src="/manus-storage/Screenshot2026-05-14at15.11.14_bd4848e3.png"
+              alt="Leo Freitas Studio Logo"
               className="h-64 sm:h-72 md:h-80 lg:h-88 object-contain drop-shadow-2xl"
             />
           </div>
