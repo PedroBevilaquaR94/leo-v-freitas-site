@@ -159,7 +159,7 @@ export default function Tattoos() {
           {/* Logo LF - Centralizada e Completa */}
           <div className="mb-6 md:mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
             <img
-              src="/manus-storage/Screenshot2026-05-14at15.11.14_bd4848e3.png"
+              src="/manus-storage/logo-lf-transparent_27ef7fb4.png"
               alt="Leo Freitas Studio Logo"
               className="h-64 sm:h-72 md:h-80 lg:h-88 object-contain drop-shadow-2xl"
             />
