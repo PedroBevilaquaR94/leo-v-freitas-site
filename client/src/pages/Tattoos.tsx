@@ -143,7 +143,7 @@ export default function Tattoos() {
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
-            src="/manus-storage/hero-banner-leo-darker_1bce75ab.png"
+            src="/manus-storage/hero-banner-leo-mobile_1a4f7dbe.png"
             alt="Hero Background"
             className="w-full h-full object-cover"
             style={{
