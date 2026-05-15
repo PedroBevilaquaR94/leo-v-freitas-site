@@ -182,7 +182,7 @@ export default function Tattoos() {
           </p>
 
           {/* Descrição */}
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 md:mb-14 lg:mb-16 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-8 sm:mb-12 md:mb-20 lg:mb-24 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
             Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.
           </p>
 
