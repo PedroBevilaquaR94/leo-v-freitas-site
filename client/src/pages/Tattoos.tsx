@@ -139,7 +139,7 @@ export default function Tattoos() {
       <Header />
 
       {/* Hero Section - Logo do Leão com Fundo Escuro */}
-      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-12 md:pt-16">
+      <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-8 sm:pb-12">
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
           <img
@@ -155,23 +155,23 @@ export default function Tattoos() {
         </div>
 
         {/* Conteúdo Centralizado */}
-        <div className="container relative z-10 text-center max-w-5xl px-4 md:px-8 py-8 md:py-12">
+        <div className="container relative z-10 text-center max-w-5xl px-3 sm:px-4 md:px-8 py-4 sm:py-8 md:py-12">
           {/* Logo LF - Centralizada e Completa */}
-          <div className="mb-6 md:mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
+          <div className="mb-3 sm:mb-6 md:mb-8 animate-fadeInScale flex justify-center" style={{ animationDelay: '0.2s' }}>
             <img
               src="/manus-storage/logo-lf-transparent_27ef7fb4.png"
               alt="Leo Freitas Studio Logo"
-              className="h-64 sm:h-72 md:h-80 lg:h-88 object-contain drop-shadow-2xl"
+              className="h-40 sm:h-64 md:h-80 lg:h-88 object-contain drop-shadow-2xl"
             />
           </div>
 
           {/* Subtítulo */}
-          <p className="text-accent text-xs md:text-sm uppercase tracking-widest mb-6 md:mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
+          <p className="text-accent text-xs sm:text-xs md:text-sm uppercase tracking-widest mb-3 sm:mb-6 md:mb-8 font-light animate-fadeInUp" style={{ animationDelay: '0.3s' }}>
             Tatuagens em Realismo, Portrait e Blackwork
           </p>
 
           {/* Descrição */}
-          <p className="text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-14 md:mb-16 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed mb-6 sm:mb-8 md:mb-14 lg:mb-16 animate-fadeInUp" style={{ animationDelay: '0.5s' }}>
             Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.
           </p>
 
