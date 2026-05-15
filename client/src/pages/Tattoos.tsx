@@ -142,17 +142,8 @@ export default function Tattoos() {
       <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-8 sm:pt-12 md:pt-16 pb-8 sm:pb-12">
         {/* Background - Fundo muito escuro */}
         <div className="absolute inset-0">
-          {/* Mobile - Sem texto */}
-          <img
-            src="/manus-storage/hero-banner-leo-mobile_1a4f7dbe.png"
-            alt="Hero Background"
-            className="w-full h-full object-contain md:hidden"
-            style={{
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              objectPosition: 'center'
-            }}
-          />
+          {/* Mobile - Fundo preto simples */}
+          <div className="w-full h-full bg-black md:hidden"></div>
           {/* Desktop - Com texto LEO FREITAS */}
           <img
             src="/manus-storage/hero-banner-leo-darker_aca8fed3.png"
@@ -164,7 +155,7 @@ export default function Tattoos() {
               objectPosition: 'center'
             }}
           />
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute inset-0 bg-black/20 hidden md:block"></div>
         </div>
 
         {/* Conteúdo Centralizado */}
