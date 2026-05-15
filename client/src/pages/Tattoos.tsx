@@ -146,20 +146,22 @@ export default function Tattoos() {
           <img
             src="/manus-storage/hero-banner-leo-mobile_1a4f7dbe.png"
             alt="Hero Background"
-            className="w-full h-full object-cover md:hidden"
+            className="w-full h-full object-contain md:hidden"
             style={{
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              objectPosition: 'center'
             }}
           />
           {/* Desktop - Com texto LEO FREITAS */}
           <img
             src="/manus-storage/hero-banner-leo-darker_aca8fed3.png"
             alt="Hero Background"
-            className="w-full h-full object-cover hidden md:block"
+            className="w-full h-full object-contain hidden md:block"
             style={{
-              backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              objectPosition: 'center'
             }}
           />
           <div className="absolute inset-0 bg-black/20"></div>
