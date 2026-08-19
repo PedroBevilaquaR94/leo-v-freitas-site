@@ -1,24 +1,167 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Leo Freitas Studio</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Leo Freitas Studio: tatuagens autorais em Realismo, Portrait e Blackwork em Londrina, PR." />
+    <meta name="theme-color" content="#0a0a0a" />
+    <title>Leo Freitas Studio | Tatuagem & Arte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+    <header class="site-header" data-header>
+      <nav class="container nav-shell" aria-label="Navegação principal">
+        <a class="wordmark" href="index.html" aria-label="Leo Freitas Studio - início">LEO FREITAS</a>
+        <div class="desktop-nav" aria-label="Páginas e seções">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="quadros.html">Quadros</a>
+          <a href="#contato">Contato</a>
+        </div>
+        <a class="button button-outline nav-cta" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-menu-toggle>
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+      <div class="mobile-nav" id="mobile-navigation" data-mobile-nav hidden>
+        <div class="container">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#portfolio">Portfólio</a>
+          <a href="quadros.html">Quadros</a>
+          <a href="#contato">Contato</a>
+          <a class="button button-outline" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar</a>
+        </div>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <img class="hero-logo reveal" src="/manus-storage/logo-lf-transparent_27ef7fb4.png" alt="Monograma LF de Leo Freitas Studio" />
+          <div class="hero-copy reveal delay-1">
+            <p class="eyebrow">Tatuagens em Realismo, Portrait e Blackwork</p>
+            <h1 id="hero-title" class="sr-only">Leo Freitas Studio</h1>
+            <p class="hero-description">Tatuador especialista em técnicas precisas e autorais. Cada trabalho é uma obra de arte única pensada especialmente para você.</p>
+          </div>
+          <div class="hero-actions reveal delay-2">
+            <a class="button button-outline" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar sessão</a>
+            <a class="button button-primary" href="quadros.html">Sessão de quadros</a>
+            <a class="button button-primary" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar agora</a>
+          </div>
+          <a class="scroll-cue" href="#sobre" aria-label="Ir para a seção Sobre"><span>Scroll</span><b>↓</b></a>
+        </div>
+      </section>
+
+      <section class="section about-section" id="sobre" aria-labelledby="about-title">
+        <div class="container split-layout">
+          <div class="artist-frame reveal-left">
+            <img src="/manus-storage/pasted_file_NuHx6z_image_456db5dd.png" alt="Leo Freitas no estúdio" />
+          </div>
+          <div class="about-copy reveal-right">
+            <p class="eyebrow">Sobre</p>
+            <h2 id="about-title">Prazer, Leo Freitas</h2>
+            <p>Tatuador há mais de 9 anos, especialista em Realismo, Portrait e Blackwork. Nascido em Londrina/PR, desde cedo tive uma forte conexão com as artes. Desenhar e pintar sempre foram minhas principais formas de expressão.</p>
+            <p>Meu propósito com cada tatuagem é criar algo exclusivo, autoral e verdadeiramente artístico na pele de cada cliente. Quero que cada pessoa que me procura saia com uma obra de arte única — que eleve sua autoestima e traga uma forma de expressão pessoal.</p>
+            <div class="stats" aria-label="Números do estúdio">
+              <div><strong>9+</strong><span>Anos</span></div>
+              <div><strong>500+</strong><span>Tatuagens</span></div>
+              <div><strong>100%</strong><span>Satisfação</span></div>
+            </div>
+            <a class="button button-primary full-mobile" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar sessão</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Portfólio</p>
+            <h2 id="portfolio-title">Obras recentes</h2>
+            <span class="gold-rule"></span>
+          </div>
+          <div class="filter-group" aria-label="Filtrar tatuagens" data-tattoo-filters>
+            <button class="filter-button is-active" type="button" data-filter="Todos">Todas</button>
+            <button class="filter-button" type="button" data-filter="Realismo">Realismo</button>
+            <button class="filter-button" type="button" data-filter="Portrait">Portrait</button>
+            <button class="filter-button" type="button" data-filter="Blackwork">Blackwork</button>
+          </div>
+          <div class="gallery-carousel" data-carousel="tattoos" aria-live="polite">
+            <div class="gallery-stage"><img data-carousel-image alt="" /></div>
+            <div class="gallery-caption"><h3 data-carousel-title></h3><p class="eyebrow" data-carousel-label></p><p class="counter" data-carousel-count></p></div>
+            <div class="carousel-controls">
+              <button class="icon-button" type="button" data-carousel-prev aria-label="Imagem anterior">←</button>
+              <div class="thumbnail-row" data-carousel-thumbnails aria-label="Selecionar trabalho"></div>
+              <button class="icon-button" type="button" data-carousel-next aria-label="Próxima imagem">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="coverups-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Especializações</p>
+            <h2 id="coverups-title">Coberturas</h2>
+            <span class="gold-rule"></span>
+          </div>
+          <div class="gallery-carousel" data-carousel="coverups" aria-live="polite">
+            <div class="gallery-stage"><img data-carousel-image alt="" /></div>
+            <div class="gallery-caption"><h3 data-carousel-title></h3><p class="eyebrow" data-carousel-label></p><p class="counter" data-carousel-count></p></div>
+            <div class="carousel-controls">
+              <button class="icon-button" type="button" data-carousel-prev aria-label="Imagem anterior">←</button>
+              <div class="thumbnail-row" data-carousel-thumbnails aria-label="Selecionar cobertura"></div>
+              <button class="icon-button" type="button" data-carousel-next aria-label="Próxima imagem">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="styles-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">Especialidades</p><h2 id="styles-title">Meus estilos</h2><span class="gold-rule"></span></div>
+          <div class="feature-grid">
+            <article class="feature-card"><h3>Realismo</h3><p>Tatuagens hiper-realistas com detalhes precisos e sombreamento profundo.</p></article>
+            <article class="feature-card"><h3>Portrait</h3><p>Retratos expressivos que capturam a essência e emoção do rosto.</p></article>
+            <article class="feature-card"><h3>Blackwork</h3><p>Composições geométricas e abstratas em preto intenso e detalhado.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tint" aria-labelledby="faq-title">
+        <div class="container narrow">
+          <div class="section-heading"><h2 id="faq-title">Dúvidas frequentes</h2><span class="gold-rule"></span></div>
+          <div class="faq-list">
+            <details><summary>Orçamento pode ser feito online?<span>+</span></summary><p>Sim! Você pode enviar fotos, descrever a ideia e receber um orçamento sem compromisso. Também oferecemos consulta presencial para discutir detalhes.</p></details>
+            <details><summary>Qual o tempo de resposta?<span>+</span></summary><p>Respondemos em até 24 horas via WhatsApp ou email. Para consultas mais complexas, agendamos uma conversa direta.</p></details>
+            <details><summary>O que é Blackwork?<span>+</span></summary><p>Blackwork é um estilo de tatuagem que utiliza apenas tinta preta em diferentes tonalidades e densidades. Cria designs geométricos, tribais e abstratos com forte impacto visual.</p></details>
+            <details><summary>Que cuidados exigem a pele antes de ser tatuada?<span>+</span></summary><p>A pele deve estar hidratada, limpa e sem ferimentos. Evite sol, bebidas alcoólicas 24h antes e durma bem. Não faça tatuagem em pele inflamada ou com problemas dermatológicos.</p></details>
+            <details><summary>Você dá workshop particular?<span>+</span></summary><p>Sim! Oferecemos workshops particulares para interessados em aprender técnicas de tatuagem. Entre em contato para mais informações e disponibilidade.</p></details>
+            <details><summary>Tatuagem dói?<span>+</span></summary><p>Sim, tatuagem causa incômodo, mas o nível de dor varia conforme a localização, tamanho e sensibilidade individual. A maioria das pessoas relata ser tolerável.</p></details>
+            <details><summary>Não sei o que tatuar, você cria o meu projeto?<span>+</span></summary><p>Claro! Podemos conversar sobre suas ideias, gostos e significados. Vou criar um design personalizado que reflita sua personalidade e visão.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contato" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section-heading"><p class="eyebrow">Contato</p><h2 id="contact-title">Vamos criar sua arte</h2><span class="gold-rule"></span></div>
+          <div class="contact-grid">
+            <article><p class="eyebrow">Localização</p><address>R. Alagoas, 792 - Centro<br />Londrina - PR, 86010-520</address></article>
+            <article><p class="eyebrow">WhatsApp</p><a href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">(43) 98862-7463</a></article>
+            <article><p class="eyebrow">Instagram</p><a href="https://instagram.com/leovfreitastattoo" target="_blank" rel="noreferrer">@leovfreitastattoo</a></article>
+          </div>
+          <div class="map-frame"><iframe title="Localização do Leo Freitas Studio" src="https://www.google.com/maps?q=R.%20Alagoas%20792%20Centro%20Londrina%20PR&output=embed" loading="lazy"></iframe></div>
+          <div class="center-action"><a class="button button-primary" href="https://wa.me/5543988627463" target="_blank" rel="noreferrer">Agendar sessão</a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="container"><span>Leo Freitas Studio</span><span>© <span data-current-year></span> Todos os direitos reservados.</span></div></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

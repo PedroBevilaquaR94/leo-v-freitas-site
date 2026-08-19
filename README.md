@@ -1,6 +1,6 @@
 # Leo Freitas Studio
 
-Site de portfólio do tatuador **Leo Freitas**, com apresentação do estúdio, galerias de tatuagens e quadros, estilos artísticos, perguntas frequentes e canais de contato.
+Site de portfólio do tatuador **Leo Freitas**, implementado em **HTML, CSS e TypeScript puros**. Não utiliza React, Tailwind CSS ou uma biblioteca de componentes.
 
 ## Principais seções
 
@@ -15,7 +15,7 @@ Site de portfólio do tatuador **Leo Freitas**, com apresentação do estúdio, 
 
 ## Tecnologias
 
-O projeto utiliza **React 19**, **TypeScript**, **Vite**, **Tailwind CSS 4**, componentes Radix/shadcn e **Wouter** para navegação no frontend.
+O projeto utiliza **HTML semântico**, **CSS responsivo**, **TypeScript puro** para interações e **Vite** para desenvolvimento e build.
 
 ## Executar localmente
 
@@ -40,9 +40,13 @@ As imagens do portfólio são carregadas por caminhos de armazenamento do ambien
 ## Estrutura principal
 
 ```text
-client/src/
-├── components/    # Cabeçalho e componentes compartilhados
-├── pages/         # Páginas Tatuagens e Quadros
-├── App.tsx        # Rotas e estrutura da aplicação
-└── index.css      # Tokens, estilos globais e responsividade
+client/
+├── index.html       # Página principal: tatuagens e contato
+├── quadros.html     # Página de obras em óleo e carvão
+└── src/
+    ├── styles.css   # Identidade visual, responsividade e animações
+    ├── data.ts      # Dados das galerias e referências de imagens
+    ├── site.ts      # Menu mobile e carrosséis reutilizáveis
+    ├── main.ts      # Interações da página principal
+    └── quadros.ts   # Interações da página de quadros
 ```
