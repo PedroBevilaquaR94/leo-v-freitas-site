@@ -35,7 +35,7 @@ pnpm build
 
 ## Publicação no GitHub Pages
 
-O GitHub Pages utiliza a pasta `docs/` do branch `main`. Após alterações no código-fonte, execute `pnpm build` e copie o conteúdo de `dist/public/` para `docs/` antes de enviar as mudanças ao repositório. A pasta já contém o arquivo `CNAME` do domínio personalizado.
+O GitHub Pages deste repositório utiliza a **raiz do branch `main`**. Após alterações no código-fonte, execute `pnpm build` e copie o conteúdo de `dist/public/` para a raiz antes de enviar as mudanças ao repositório. Os arquivos `index.html`, `quadros.html`, `assets/`, `.nojekyll` e `CNAME` são a versão publicada no domínio personalizado.
 
 ## Observações sobre imagens
 

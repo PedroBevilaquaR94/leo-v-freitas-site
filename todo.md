@@ -1,4 +1,0 @@
-- [x] Mapear o conteúdo, imagens e interações existentes no site React.
-- [x] Implementar a versão estática em HTML, CSS e TypeScript.
-- [x] Testar a experiência responsiva em desktop e celular.
-- [ ] Atualizar o repositório GitHub com a nova estrutura.
