@@ -1,0 +1,4 @@
+*** Add File: /home/ubuntu/leo-v-freitas-site/docs/README.md
+# Arquivos de publicação
+
+Esta pasta contém a versão compilada do site estático, utilizada pelo GitHub Pages no domínio personalizado. Os arquivos são gerados a partir de `client/` com o comando `pnpm build`.

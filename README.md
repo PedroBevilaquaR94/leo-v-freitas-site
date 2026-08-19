@@ -33,6 +33,10 @@ pnpm check
 pnpm build
 ```
 
+## Publicação no GitHub Pages
+
+O GitHub Pages utiliza a pasta `docs/` do branch `main`. Após alterações no código-fonte, execute `pnpm build` e copie o conteúdo de `dist/public/` para `docs/` antes de enviar as mudanças ao repositório. A pasta já contém o arquivo `CNAME` do domínio personalizado.
+
 ## Observações sobre imagens
 
 As imagens do portfólio são carregadas por caminhos de armazenamento do ambiente de publicação. Para atualizar os trabalhos exibidos, altere as referências de imagem nas páginas em `client/src/pages/`.
